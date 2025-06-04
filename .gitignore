@@ -1,0 +1,58 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+env/
+venv/
+# Si vous avez plusieurs venv possibles, ignorez aussi :
+*/.venv/
+*/env/
+*/venv/
+
+# Dependences installées
+pip-env/
+Pipfile.lock
+
+# Dossiers de sorties et générés
+output/
+data/cvs/
+data/jobs/offer_criteria/
+# (Attention : si vous voulez garder certains fichiers de données en repo,
+#  n’ignorez que les parties qui sont générées ou temporaires.)
+
+# Fichiers de clés/secret
+.env
+*.key
+*.pem
+
+# IDEs et éditeurs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Système d’exploitation
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Archives et fichiers temporaires
+*.zip
+*.tar.gz
+*.egg-info/
+dist/
+build/
+
+# Mac : fichiers metadata
+.AppleDouble
+.LSOverride
+
+# Windows thumbnail cache
+ehthumbs.db
+Thumbnail.db
