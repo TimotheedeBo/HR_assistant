@@ -30,7 +30,7 @@ pip install -r requirements.txt
 ## Usage
 
 ```bash
-streamlit run interface/interface_main.py
+streamlit run interface_main.py
 ```
 
 - **Create/Edit Offers**: Define title, auto-ID, description, and both hard/soft criteria.
