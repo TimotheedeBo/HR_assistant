@@ -21,6 +21,7 @@ def save_criteria(offer_id, criteria):
     with open(path, "w", encoding="utf-8") as f:
         json.dump(criteria, f, indent=2)
 
+
 st.header("Configure Offer Criteria/Filters")
 
 offer_ids = list_offer_ids()
@@ -28,7 +29,7 @@ if not offer_ids:
     st.warning("No job offers found. Create offers first.")
     st.stop()
 
-selected_offer = st.selectbox("Select Job Offer", offer_ids)
+selected_offer = st.selectbox("Select Job Offer", offer_ids, key="filters_select_offer")
 criteria = load_criteria(selected_offer)
 
 required_skills = st.text_area("Required Skills (comma separated)", value=",".join(criteria.get("required_skills", [])))
