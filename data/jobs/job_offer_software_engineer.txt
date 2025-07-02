@@ -1,0 +1,15 @@
+Senior Software Engineer
+We are looking for a Senior Software Engineer to join our platform team. You will:
+- Architect and build scalable backend APIs in Python.
+- Containerize applications with Docker and deploy on Kubernetes.
+- Collaborate in an agile team to deliver cloud-native solutions.
+
+Requirements:
+- 5+ years professional experience in software development.
+- Strong Python skills; familiarity with Django or Flask.
+- Hands-on Docker and Kubernetes experience.
+- Bachelor’s or Master’s in Computer Science or equivalent.
+
+Preferred:
+- Experience with AWS (EC2, Lambda).
+- Knowledge of Go or Java.

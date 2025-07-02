@@ -1,7 +1,7 @@
 import streamlit as st
 import importlib
 
-from interface import template_manager, dashboard, linkedin_post, report_generator
+from interface import template_manager, dashboard, linkedin_post, report_generator, cv_uploader, cv_matcher
 
 st.set_page_config(page_title="HRAssistant", layout="wide")
 st.title("HRAssistant: HR AI Platform")
@@ -24,6 +24,12 @@ elif menu == "Configure Offer Criteria":
 elif menu == "Manage Templates":
     import interface.template_manager
     template_manager.show_template_manager()
+elif menu == "Upload CVs":
+    import interface.cv_uploader
+    cv_uploader.show_cv_uploader()
+elif menu == "Match CVs":
+    import interface.cv_matcher
+    cv_matcher.show_cv_matcher()
 elif menu == "Generate LinkedIn Post":
     import interface.linkedin_post
     linkedin_post.show_linkedin_post()
@@ -33,3 +39,4 @@ elif menu == "Generate CV Report":
 elif menu == "Match & Ranking Dashboard":
     import interface.dashboard
     dashboard.show_dashboard()
+

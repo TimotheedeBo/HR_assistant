@@ -1,0 +1,15 @@
+Data Analyst
+Join our analytics team to:
+- Develop and maintain ETL pipelines.
+- Design and build interactive dashboards.
+- Analyze large datasets and present insights to stakeholders.
+
+Requirements:
+- 2–4 years of experience as a data analyst or similar role.
+- Proficiency in SQL and Python (pandas, NumPy).
+- Experience with BI tools (Tableau, Power BI).
+- Bachelor’s degree in Statistics, Mathematics, Computer Science, or related field.
+
+Preferred:
+- Familiarity with cloud data platforms (BigQuery, Redshift).
+- Knowledge of machine-learning basics.
