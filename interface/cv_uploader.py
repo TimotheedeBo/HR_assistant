@@ -6,11 +6,11 @@ os.makedirs(CVS_DIR, exist_ok=True)
 
 def show_cv_uploader():
     st.header("📂 Upload Candidate CVs")
-    st.write("Drop in one or more PDF/TXT resumes to ingest them into the system.")
+    st.write("Drop in one or more PDF/TXT/DOCX resumes to ingest them into the system.")
 
     uploaded = st.file_uploader(
         "Select CV files",
-        type=["pdf", "txt"],
+        type=["pdf", "txt", "docx"],
         accept_multiple_files=True,
         key="cv_upload"
     )
@@ -25,4 +25,3 @@ def show_cv_uploader():
                     out.write(f.getbuffer())
                 saved.append(fn)
             st.success(f"Saved {len(saved)} file(s): {', '.join(saved)}")
-            # optionally, you could trigger a re-parse here or just leave them in data/cvs/

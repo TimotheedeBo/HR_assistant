@@ -12,7 +12,7 @@ def show_cv_matcher():
     st.header("🔍 CV ↔️ Offer Matching")
 
     # build lists
-    cv_files    = [f for f in os.listdir(CVS_DIR) if f.endswith((".pdf", ".txt"))]
+    cv_files    = [f for f in os.listdir(CVS_DIR) if f.endswith((".pdf", ".txt", ".docx"))]
     offer_files = [f.replace(".txt","") for f in os.listdir(OFFERS_DIR) if f.endswith(".txt")]
 
     if not cv_files or not offer_files:
@@ -45,4 +45,4 @@ def show_cv_matcher():
 
         st.metric(label="Compatibility Score", value=f"{score:.2f}")
         # optionally show structured match summary
-        st.json(cv_data)  # or pretty-print any fields you like
+        st.json(cv_data)
